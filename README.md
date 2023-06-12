@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Tic Tac Toe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Tic Tac Toe App is a React application that allows users to play the classic game of Tic Tac Toe. It provides an interactive game board where players can take turns placing their marks ('X' or 'O') and determines the winner based on the game rules. The project utilizes React's ES6 syntax, TypeScript, and React hooks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Interactive game board where players can place their marks ('X' or 'O')
+- Determines the winner based on the game rules (vertical, horizontal, or diagonal matching marks)
+- Indicates the current player's turn
+- Provides a "Play Again" option to start a new game
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React: A JavaScript library for building user interfaces
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript
+- CSS: Styling language used to design the app
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with the Course Directory Web App, follow these steps:
 
-### `npm run build`
+1. Clone the repository: `https://github.com/liamkande/my-tic-tac-toe-app.git`
+2. Navigate to the project directory: `cd my-tic-tac-toe-app`
+3. Install the dependencies: `yarn install`
+4. Start the application: `yarn start`
+5. Open your web browser and visit: `http://localhost:3000`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Upon launching the application, you will see an empty Tic Tac Toe game board. Players can take turns by clicking on an empty cell to place their mark ('X' or 'O'). The game will automatically determine the winner when there is a matching line of three marks vertically, horizontally, or diagonally. If the game ends in a draw, it will display a message indicating a tie.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start a new game after a win or a draw, simply click the "Play Again" button.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Contributing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Contributions are welcome! If you find a bug or have a feature request, please open an issue on the GitHub repository. If you'd like to contribute code, feel free to open a pull request with your changes.
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License.
