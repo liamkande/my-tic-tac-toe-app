@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
 
-const App = () => {
-  const [board, setBoard] = useState(Array(9).fill(null));
-  const [player, setPlayer] = useState('X');
-  const [winner, setWinner] = useState(null);
+const App: React.FC = () => {
+  const [board, setBoard] = useState<Array<string | null>>(Array(9).fill(null));
+  const [player, setPlayer] = useState<string>('X');
+  const [winner, setWinner] = useState<string | null>(null);
 
   const handleClick = (index: number) => {
     if (board[index] || winner) return;
@@ -19,8 +19,8 @@ const App = () => {
     checkWinner(newBoard);
   };
 
-  const checkWinner = (board: any) => {
-    const winningCombinations = [
+  const checkWinner = (board: Array<string | null>) => {
+    const winningCombinations: number[][] = [
       [0, 1, 2],
       [3, 4, 5],
       [6, 7, 8],
@@ -40,7 +40,6 @@ const App = () => {
     });
 
     if (!isWinner && !board.includes(null)) {
-      // @ts-ignore
       setWinner('draw');
     }
   };
