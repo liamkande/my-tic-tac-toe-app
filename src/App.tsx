@@ -59,7 +59,7 @@ const App: React.FC = () => {
   return (
       <div className="app">
         <h1>Tic Tac Toe</h1>
-        <h3 className="player">Player {player}'s turn:</h3>
+        {!winner && ( <p>Player <strong className="player">{player}</strong>'s turn:</p>)}
         <div className="board">
           {board.map((cell, index) => (
               <div key={index} className="row">
